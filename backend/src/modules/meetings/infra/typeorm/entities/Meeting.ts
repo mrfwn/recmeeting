@@ -8,6 +8,8 @@ import {
   JoinColumn,
 } from 'typeorm';
 
+import { Exclude } from 'class-transformer';
+
 import User from '@modules/users/infra/typeorm/entities/User';
 
 @Entity('meetings')
@@ -16,6 +18,7 @@ class Meeting {
   id: string;
 
   @Column()
+  @Exclude()
   user_id: string;
 
   @ManyToOne(() => User)

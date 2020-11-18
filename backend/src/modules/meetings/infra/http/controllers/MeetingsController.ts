@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+import { classToClass } from 'class-transformer';
 import { container } from 'tsyringe';
 import ListMeetingService from '@modules/meetings/services/ListMeetingService';
 import CreateMeetingService from '@modules/meetings/services/CreateMeetingService';
@@ -15,7 +16,7 @@ export default class MeetingsController {
     const meetings = await listMeeting.execute({
       user_id,
     });
-    return response.json(meetings);
+    return response.json(classToClass(meetings));
   }
 
   public async create(request: Request, response: Response): Promise<Response> {
@@ -30,7 +31,7 @@ export default class MeetingsController {
       title,
       transcription
     });
-    return response.json(meeting);
+    return response.json(classToClass(meeting));
   }
 
   public async update(request: Request, response: Response): Promise<Response> {
@@ -45,7 +46,7 @@ export default class MeetingsController {
       transcription
     });
 
-    return response.json(meeting);
+    return response.json(classToClass(meeting));
   }
 
   public async delete(request: Request, response: Response): Promise<Response> {
