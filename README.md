@@ -10,6 +10,10 @@
   ##  Description:
    - This project is a Application for registering meetings, and it was created as a challenge for the stone company.
 
+  ##  Important Note
+   - The project must be used in the google chrome browser.
+   - Attention to the microphone used by the browser at the time of recording.
+
   ##  Running In Terminal
    - Clone code - "git clone url_repository" 
 
