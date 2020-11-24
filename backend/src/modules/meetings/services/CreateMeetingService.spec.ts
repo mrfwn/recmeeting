@@ -18,6 +18,7 @@ describe('CreateMeeting', () => {
       user_id: 'user-id',
       title: 'title',
       transcription: 'transcription',
+      type: 'type',
       date: new Date(),
     });
 
@@ -30,6 +31,7 @@ describe('CreateMeeting', () => {
       user_id: 'user-id',
       title: 'title',
       transcription: 'transcription',
+      type: 'type',
       date: new Date(),
     });
 
@@ -38,6 +40,7 @@ describe('CreateMeeting', () => {
         user_id: 'user-id',
         title: 'title',
         transcription: 'transcription',
+        type: 'type',
         date: new Date(),
       }),
     ).rejects.toBeInstanceOf(AppError);

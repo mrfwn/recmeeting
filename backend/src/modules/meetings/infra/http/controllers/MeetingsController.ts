@@ -21,7 +21,7 @@ export default class MeetingsController {
 
   public async create(request: Request, response: Response): Promise<Response> {
     const user_id = request.user.id;
-    const { title,transcription, date } = request.body;
+    const { title,transcription,type, date } = request.body;
 
     const createMeeting = container.resolve(CreateMeetingService);
 
@@ -29,6 +29,7 @@ export default class MeetingsController {
       date,
       user_id,
       title,
+      type,
       transcription
     });
     return response.json(classToClass(meeting));

@@ -46,10 +46,11 @@ class MeetingsRepository implements IMeetingsRepository {
     user_id,
     title,
     transcription,
+    type,
     date,
   }: ICreateMeetingDTO): Promise<Meeting> {
     const meeting = new Meeting();
-    Object.assign(meeting, { id: uuid(), user_id, title,transcription, date });
+    Object.assign(meeting, { id: uuid(), user_id, title,transcription,type, date });
 
     this.meetings.push(meeting);
 

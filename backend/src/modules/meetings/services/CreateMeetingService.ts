@@ -9,6 +9,7 @@ interface IRequest {
   user_id: string;
   title: string;
   transcription: string;
+  type: string;
   date: Date;
 }
 
@@ -23,6 +24,7 @@ class CreateMeetingService {
     user_id,
     title,
     transcription,
+    type,
     date
   }: IRequest): Promise<Meeting> {
 
@@ -39,6 +41,7 @@ class CreateMeetingService {
       user_id,
       title,
       transcription,
+      type,
       date
     });
 

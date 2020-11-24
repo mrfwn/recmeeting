@@ -27,6 +27,10 @@ export class CreateMeetings1605681888036 implements MigrationInterface {
               type: 'varchar',
             },
             {
+              name: 'type',
+              type: 'varchar',
+            },
+            {
               name: 'date',
               type: 'timestamp with time zone',
             },

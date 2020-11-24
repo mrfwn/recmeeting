@@ -29,6 +29,9 @@ class Meeting {
   title: string;
 
   @Column()
+  type: string;
+
+  @Column()
   transcription: string;
 
   @Column('timestamp with time zone')

@@ -16,6 +16,7 @@ meetingsRouter.post(
     [Segments.BODY]: {
       transcription: Joi.string().required(),
       title: Joi.string().required(),
+      type: Joi.string().required(),
       date: Joi.date().required(),
     },
   }),
@@ -29,6 +30,7 @@ meetingsRouter.put(
       meeting_id: Joi.string().required(),
       title: Joi.string(),
       transcription: Joi.string(),
+      type: Joi.string(),
     },
   }),
   meetingsController.update,

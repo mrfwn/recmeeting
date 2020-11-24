@@ -49,12 +49,14 @@ class MeetingsRepository implements IMeetingsRepository {
     user_id,
     title,
     transcription,
+    type,
     date,
   }: ICreateMeetingDTO): Promise<Meeting> {
     const meeting = this.ormRepository.create({
       user_id,
       title,
       transcription,
+      type,
       date,
     });
 

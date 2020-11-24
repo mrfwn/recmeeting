@@ -16,6 +16,7 @@ describe('ListMeetings', () => {
       user_id: 'user-id',
       title: 'title-1',
       transcription: 'transcription-1',
+      type: 'type-1',
       date: new Date(),
     });
 
@@ -23,6 +24,7 @@ describe('ListMeetings', () => {
       user_id: 'user-id',
       title: 'title-2',
       transcription: 'transcription-2',
+      type: 'type-2',
       date: new Date(),
     });
 
@@ -30,6 +32,7 @@ describe('ListMeetings', () => {
       user_id: 'user-id-2',
       title: 'title-3',
       transcription: 'transcription-3',
+      type: 'type-3',
       date: new Date(),
     });
 

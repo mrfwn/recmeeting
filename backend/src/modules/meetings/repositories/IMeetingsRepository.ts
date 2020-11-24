@@ -6,6 +6,7 @@ export default interface IMeetingsRepository {
     user_id,
     title,
     transcription,
+    type,
     date,
   }: ICreateMeetingDTO): Promise<Meeting>;
   findById(meeting_id: string): Promise<Meeting | undefined>;
