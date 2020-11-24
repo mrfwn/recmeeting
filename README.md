@@ -15,6 +15,7 @@
 
   ##  Running BackEnd:
    - Running "yarn" in backend path .
+   - Transform .env.example to .env
    - Create Docker Container "docker run --name postrecmeeting -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres:latest".
    - Create DATABASE "recmeeting"
    - Running "yarn typeorm migration:run"
@@ -35,7 +36,7 @@
    - Transcription Voice in Text
 
   ##  Demonstration:
-  
+
 [![Watch the video](https://img.youtube.com/vi/X3Owtj4kJdc/mqdefault.jpg)](https://youtu.be/X3Owtj4kJdc)
 
 </div>
